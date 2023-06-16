@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+    width: 100%;
+    background-color: #e0cccc;
+    padding: 10px  10px 10px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+.dropdown{
+     display: inline-block;
+     position: relative;
+     margin-left: 10px;
+}
+.drop-content{
+    display: none;
+    background-color: #ff7373;
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    box-sizing: border-box; 
+    box-shadow: 5px 5px 10px rgb(186, 180, 180);
+}
+.dropdown button{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-family:cursive;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.drop-content a{
+    display: block;
+    color: white;
+    text-decoration:none;
+    padding: 10px;
+}
+.dropdown button:hover{
+    background-color: #f1f142;
+    color: black;
+    border-radius: 10px 10px 0px 0px ;
+}
+.drop-content a:hover{
+    background-color: rgb(255, 19, 90);
+}
+
+.dropdown:hover .drop-content{display: block;}
+.dropdown:hover button{ background-color: #f1f142;
+    color: black;
+    border-radius: 10px 10px 0px 0px ;}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button>Home</button>
+            <div class="drop-content">
+                <a href="test.html">Gallery</a>
+                <a href="test.html">About us</a>
+                <a href="test.html">News</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button>Courses</button>
+            <div class="drop-content">
+                <a href="test.html">BCA</a>
+                <a href="test.html">MCA</a>
+                <a href="test.html">Btech</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Contact US</button>
+            <div class="drop-content">
+                <a href="test.html">Facebook</a>
+                <a href="test.html">WhatsApp</a>
+                <a href="test.html">Instagram</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
